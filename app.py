@@ -8,10 +8,11 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-CSV_PATH = "C:/Users/Itsarapong.po/MAM/list.csv"
-TEMP_CSV_PATH = "C:/Users/Itsarapong.po/MAM/list_temp.csv"
-LOGS_PATH = "C:/Users/Itsarapong.po/MAM/stock_logs.csv"
-SETTINGS_PATH = "C:/Users/Itsarapong.po/MAM/settings.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_PATH = os.path.join(BASE_DIR, "list.csv")
+TEMP_CSV_PATH = os.path.join(BASE_DIR, "list_temp.csv")
+LOGS_PATH = os.path.join(BASE_DIR, "stock_logs.csv")
+SETTINGS_PATH = os.path.join(BASE_DIR, "settings.json")
 
 # Load Settings
 def load_settings():
