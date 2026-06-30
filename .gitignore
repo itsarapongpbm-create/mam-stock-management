@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+list_temp.csv
+.env
+.venv/
+venv/
+.vscode/
